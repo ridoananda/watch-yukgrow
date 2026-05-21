@@ -3,315 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — YUKGROW Watch Atelier</title>
-  <meta name="description" content="Hubungi tim kurator YukGrow Watch Atelier untuk inquiry, sourcing, trade-in, atau consignment." />
+  <title>Kontak — YukGrow Watch</title>
+  <meta name="description" content="Hubungi YukGrow Watch via WhatsApp, email, atau kunjungi toko." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            ink:'#0A0A0B', obsidian:'#111114', graphite:'#1A1A1F', smoke:'#2A2A30',
-            bone:'#F5F1EA', champagne:'#C9A961', champagneSoft:'#E5C98A', copper:'#B87333',
-          },
-          fontFamily: { serif:['"Cormorant Garamond"','serif'], sans:['Inter','system-ui','sans-serif'] },
-          letterSpacing: { 'widest-2':'0.3em' }
+          colors: { ink:'#111827', muted:'#6B7280', line:'#E5E7EB', soft:'#F9FAFB', accent:'#0F172A' },
+          fontFamily: { sans: ['Inter','system-ui','sans-serif'] }
         }
       }
     }
   </script>
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
-<body class="bg-ink text-bone font-sans antialiased selection:bg-champagne selection:text-ink">
+<body class="bg-white text-ink font-sans antialiased">
 
-  <!-- ANNOUNCEMENT -->
-  <div class="bg-graphite border-b border-smoke text-bone/70 text-[11px] tracking-widest uppercase">
-    <div class="max-w-[1400px] mx-auto px-6 py-2.5 flex items-center justify-between">
-      <span class="hidden md:block">Free Authentication · Garansi Original 100%</span>
-      <span class="flex-1 md:flex-none text-center">Pengiriman Asuransi ke Seluruh Indonesia</span>
-      <span class="hidden md:block">+62 821 1097 1151</span>
+  <!-- TOP BAR -->
+  <div class="bg-soft border-b border-line text-xs text-muted">
+    <div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
+      <span>Garansi resmi · Original 100%</span>
+      <a href="https://wa.me/628211097151" class="hover:text-ink">WA: 0821 1097 1151</a>
     </div>
   </div>
 
   <!-- NAV -->
-  <header id="nav" class="sticky top-0 z-50 bg-ink/85 backdrop-blur-xl border-b border-smoke/60">
-    <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between gap-8">
-      <a href="./index.html" class="flex items-center gap-3 group">
-        <span class="w-9 h-9 border border-champagne rounded-full flex items-center justify-center group-hover:bg-champagne group-hover:text-ink transition">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-        </span>
-        <div class="leading-none">
-          <div class="font-serif text-xl tracking-wide">YUKGROW</div>
-          <div class="text-[10px] tracking-widest-2 text-champagne uppercase mt-0.5">Watch Atelier</div>
-        </div>
+  <header class="sticky top-0 z-40 bg-white border-b border-line">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="./index.html" class="flex items-center gap-2">
+        <span class="w-7 h-7 rounded-full border-2 border-ink"></span>
+        <span class="font-semibold tracking-tight">YukGrow Watch</span>
       </a>
-      <nav class="hidden lg:flex items-center gap-9 text-sm">
-        <a href="./collection.html" class="hover:text-champagne transition">Collection</a>
-        <a href="./collection.html#brands" class="hover:text-champagne transition">Brands</a>
-        <a href="./about.html" class="hover:text-champagne transition">Heritage</a>
-        <a href="./about.html#authenticity" class="hover:text-champagne transition">Authenticity</a>
-        <a href="./contact.html" class="text-champagne">Contact</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm text-muted">
+        <a href="./collection.html" class="hover:text-ink">Katalog</a>
+        <a href="./about.html" class="hover:text-ink">Tentang</a>
+        <a href="./contact.html" class="text-ink">Kontak</a>
       </nav>
-      <div class="flex items-center gap-3">
-        <a href="https://wa.me/628211097151" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-5 h-10 rounded-full bg-champagne text-ink text-xs font-semibold tracking-widest uppercase hover:bg-champagneSoft transition">WhatsApp</a>
-      </div>
+      <a href="https://wa.me/628211097151" target="_blank" class="inline-flex items-center gap-2 px-4 h-9 rounded-full bg-ink text-white text-xs font-medium hover:bg-accent">Chat</a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="border-b border-smoke">
-    <div class="max-w-[1100px] mx-auto px-6 py-20 lg:py-28 text-center">
-      <div class="flex items-center justify-center gap-3 mb-5">
-        <span class="w-10 h-px bg-champagne"></span>
-        <span class="text-[11px] tracking-widest-2 uppercase text-champagne">Get in Touch</span>
-        <span class="w-10 h-px bg-champagne"></span>
+  <!-- CONTENT -->
+  <section>
+    <div class="max-w-2xl mx-auto px-4 py-12 md:py-16">
+      <div class="text-xs text-muted mb-2">
+        <a href="./index.html" class="hover:text-ink">Home</a> / <span class="text-ink">Kontak</span>
       </div>
-      <h1 class="font-serif text-5xl md:text-7xl mb-6 leading-[1.05]">
-        Let's <em class="text-champagne not-italic">talk</em> watches.
-      </h1>
-      <p class="text-bone/70 max-w-xl mx-auto text-lg leading-relaxed">
-        Inquiry produk, request sourcing, trade-in valuation, atau consignment — tim kurator kami siap melayani secara private.
-      </p>
-    </div>
-  </section>
+      <h1 class="text-3xl md:text-4xl font-semibold tracking-tight mb-3">Kontak</h1>
+      <p class="text-muted mb-10">Cara tercepat: WhatsApp. Tim kami online Senin–Sabtu, 10:00–19:00 WIB.</p>
 
-  <!-- CONTACT METHODS -->
-  <section class="border-b border-smoke">
-    <div class="max-w-[1400px] mx-auto px-6 py-20 grid lg:grid-cols-12 gap-12">
-
-      <!-- LEFT: METHODS -->
-      <div class="lg:col-span-5 space-y-5">
-        <a href="https://wa.me/628211097151" target="_blank" class="block p-7 border border-smoke hover:border-champagne hover:bg-graphite/30 transition group">
-          <div class="flex items-start gap-5">
-            <span class="w-12 h-12 rounded-full bg-champagne text-ink flex items-center justify-center shrink-0">
+      <!-- METHODS -->
+      <div class="space-y-3 mb-12">
+        <a href="https://wa.me/628211097151" target="_blank" class="block p-5 border border-line rounded-md hover:border-ink transition group">
+          <div class="flex items-center gap-4">
+            <span class="w-11 h-11 rounded-full bg-green-500 text-white flex items-center justify-center shrink-0">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
             </span>
             <div class="flex-1">
-              <div class="text-[11px] tracking-widest-2 uppercase text-champagne mb-1">Fastest Response</div>
-              <h3 class="font-serif text-2xl mb-1 group-hover:text-champagne transition">WhatsApp</h3>
-              <p class="text-bone/60 text-sm mb-2">Direct chat dengan kurator. Average response 5 menit.</p>
-              <span class="text-bone/90 font-medium">+62 821 1097 1151</span>
+              <div class="font-medium group-hover:underline">WhatsApp</div>
+              <div class="text-sm text-muted">0821 1097 1151 · Respon ≤ 5 menit</div>
             </div>
-            <svg class="w-5 h-5 text-bone/40 group-hover:text-champagne group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            <svg class="w-4 h-4 text-muted group-hover:text-ink" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </div>
         </a>
 
-        <a href="mailto:hello@watch.yukgrow.com" class="block p-7 border border-smoke hover:border-champagne hover:bg-graphite/30 transition group">
-          <div class="flex items-start gap-5">
-            <span class="w-12 h-12 rounded-full border border-champagne text-champagne flex items-center justify-center shrink-0">
+        <a href="mailto:hello@watch.yukgrow.com" class="block p-5 border border-line rounded-md hover:border-ink transition group">
+          <div class="flex items-center gap-4">
+            <span class="w-11 h-11 rounded-full bg-soft border border-line flex items-center justify-center shrink-0">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
             </span>
             <div class="flex-1">
-              <div class="text-[11px] tracking-widest-2 uppercase text-champagne mb-1">Email</div>
-              <h3 class="font-serif text-2xl mb-1 group-hover:text-champagne transition">hello@watch.yukgrow.com</h3>
-              <p class="text-bone/60 text-sm">Untuk inquiry detail atau dokumentasi panjang.</p>
+              <div class="font-medium group-hover:underline">Email</div>
+              <div class="text-sm text-muted">hello@watch.yukgrow.com</div>
             </div>
-            <svg class="w-5 h-5 text-bone/40 group-hover:text-champagne group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            <svg class="w-4 h-4 text-muted group-hover:text-ink" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </div>
         </a>
 
-        <a href="#" class="block p-7 border border-smoke hover:border-champagne hover:bg-graphite/30 transition group">
-          <div class="flex items-start gap-5">
-            <span class="w-12 h-12 rounded-full border border-champagne text-champagne flex items-center justify-center shrink-0">
+        <a href="https://www.instagram.com" target="_blank" class="block p-5 border border-line rounded-md hover:border-ink transition group">
+          <div class="flex items-center gap-4">
+            <span class="w-11 h-11 rounded-full bg-soft border border-line flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </span>
+            <div class="flex-1">
+              <div class="font-medium group-hover:underline">Instagram</div>
+              <div class="text-sm text-muted">@yukgrow.watch</div>
+            </div>
+            <svg class="w-4 h-4 text-muted group-hover:text-ink" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+        </a>
+
+        <div class="p-5 border border-line rounded-md">
+          <div class="flex items-start gap-4">
+            <span class="w-11 h-11 rounded-full bg-soft border border-line flex items-center justify-center shrink-0">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </span>
             <div class="flex-1">
-              <div class="text-[11px] tracking-widest-2 uppercase text-champagne mb-1">Private Atelier</div>
-              <h3 class="font-serif text-2xl mb-1 group-hover:text-champagne transition">Visit by Appointment</h3>
-              <p class="text-bone/60 text-sm mb-2">Jl. Senopati Raya 17, Jakarta Selatan 12190</p>
-              <span class="text-[11px] tracking-widest uppercase text-bone/50">Mon–Sat · 10:00–19:00 WIB</span>
+              <div class="font-medium">Toko Offline</div>
+              <div class="text-sm text-muted">Jl. Senopati Raya 17, Jakarta Selatan 12190</div>
+              <div class="text-xs text-muted mt-1">Senin–Sabtu · 10:00–19:00 WIB · By appointment</div>
             </div>
-            <svg class="w-5 h-5 text-bone/40 group-hover:text-champagne group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </div>
-        </a>
-
-        <div class="p-7 border border-smoke">
-          <h3 class="font-serif text-xl mb-4">Follow Us</h3>
-          <div class="flex gap-3">
-            <a href="#" class="w-11 h-11 rounded-full border border-smoke hover:border-champagne hover:text-champagne flex items-center justify-center transition">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>
-            <a href="#" class="w-11 h-11 rounded-full border border-smoke hover:border-champagne hover:text-champagne flex items-center justify-center transition">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-            </a>
-            <a href="#" class="w-11 h-11 rounded-full border border-smoke hover:border-champagne hover:text-champagne flex items-center justify-center transition">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.643.135-.953l11.566-4.458c.538-.196 1.006.128.832.938z"/></svg>
-            </a>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT: FORM -->
-      <div class="lg:col-span-7">
-        <div class="border border-smoke p-8 lg:p-10">
-          <h2 class="font-serif text-3xl mb-2">Send a Message</h2>
-          <p class="text-bone/60 text-sm mb-8">Isi form di bawah dan tim kami akan reply dalam 1×24 jam.</p>
+      <!-- SHORT FORM -->
+      <h2 class="text-xl font-semibold mb-2">Atau kirim pesan</h2>
+      <p class="text-sm text-muted mb-5">Untuk inquiry detail atau request rekomendasi. Kami balas dalam 1×24 jam.</p>
 
-          <form class="space-y-5">
-            <div class="grid sm:grid-cols-2 gap-5">
-              <div>
-                <label class="block text-[10px] tracking-widest-2 uppercase text-bone/60 mb-2">First Name *</label>
-                <input type="text" required class="w-full bg-graphite border border-smoke px-4 h-12 text-sm focus:border-champagne outline-none transition"/>
-              </div>
-              <div>
-                <label class="block text-[10px] tracking-widest-2 uppercase text-bone/60 mb-2">Last Name *</label>
-                <input type="text" required class="w-full bg-graphite border border-smoke px-4 h-12 text-sm focus:border-champagne outline-none transition"/>
-              </div>
-            </div>
-
-            <div class="grid sm:grid-cols-2 gap-5">
-              <div>
-                <label class="block text-[10px] tracking-widest-2 uppercase text-bone/60 mb-2">Email *</label>
-                <input type="email" required class="w-full bg-graphite border border-smoke px-4 h-12 text-sm focus:border-champagne outline-none transition"/>
-              </div>
-              <div>
-                <label class="block text-[10px] tracking-widest-2 uppercase text-bone/60 mb-2">WhatsApp</label>
-                <input type="tel" class="w-full bg-graphite border border-smoke px-4 h-12 text-sm focus:border-champagne outline-none transition"/>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-[10px] tracking-widest-2 uppercase text-bone/60 mb-2">Inquiry Type</label>
-              <div class="grid sm:grid-cols-2 gap-3">
-                <label class="flex items-center gap-3 px-4 h-12 border border-smoke hover:border-champagne cursor-pointer transition">
-                  <input type="radio" name="inquiry" class="accent-champagne"/>
-                  <span class="text-sm">Product Inquiry</span>
-                </label>
-                <label class="flex items-center gap-3 px-4 h-12 border border-smoke hover:border-champagne cursor-pointer transition">
-                  <input type="radio" name="inquiry" class="accent-champagne"/>
-                  <span class="text-sm">Sourcing Request</span>
-                </label>
-                <label class="flex items-center gap-3 px-4 h-12 border border-smoke hover:border-champagne cursor-pointer transition">
-                  <input type="radio" name="inquiry" class="accent-champagne"/>
-                  <span class="text-sm">Trade-In Valuation</span>
-                </label>
-                <label class="flex items-center gap-3 px-4 h-12 border border-smoke hover:border-champagne cursor-pointer transition">
-                  <input type="radio" name="inquiry" class="accent-champagne"/>
-                  <span class="text-sm">Consignment</span>
-                </label>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-[10px] tracking-widest-2 uppercase text-bone/60 mb-2">Watch Reference (optional)</label>
-              <input type="text" placeholder="e.g. Patek Philippe Nautilus 5711" class="w-full bg-graphite border border-smoke px-4 h-12 text-sm focus:border-champagne outline-none transition"/>
-            </div>
-
-            <div>
-              <label class="block text-[10px] tracking-widest-2 uppercase text-bone/60 mb-2">Message *</label>
-              <textarea rows="5" required class="w-full bg-graphite border border-smoke px-4 py-3 text-sm focus:border-champagne outline-none transition resize-none"></textarea>
-            </div>
-
-            <label class="flex items-start gap-3 cursor-pointer">
-              <input type="checkbox" class="accent-champagne mt-1"/>
-              <span class="text-xs text-bone/60 leading-relaxed">Saya setuju dengan <a href="#" class="text-champagne underline">privacy policy</a> dan boleh dihubungi via email/WhatsApp.</span>
-            </label>
-
-            <button type="submit" class="group w-full h-14 bg-champagne text-ink flex items-center justify-center gap-3 text-xs font-semibold tracking-widest-2 uppercase hover:bg-champagneSoft transition">
-              Send Message
-              <svg class="w-4 h-4 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </form>
+      <form class="space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs text-muted mb-1.5">Nama</label>
+            <input type="text" required class="w-full bg-white border border-line rounded-md px-3 h-10 text-sm focus:border-ink outline-none"/>
+          </div>
+          <div>
+            <label class="block text-xs text-muted mb-1.5">WhatsApp / Email</label>
+            <input type="text" required class="w-full bg-white border border-line rounded-md px-3 h-10 text-sm focus:border-ink outline-none"/>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="border-b border-smoke bg-obsidian">
-    <div class="max-w-[900px] mx-auto px-6 py-24">
-      <div class="text-center mb-14">
-        <div class="flex items-center justify-center gap-3 mb-4">
-          <span class="w-10 h-px bg-champagne"></span>
-          <span class="text-[11px] tracking-widest-2 uppercase text-champagne">Frequently Asked</span>
-          <span class="w-10 h-px bg-champagne"></span>
+        <div>
+          <label class="block text-xs text-muted mb-1.5">Pesan</label>
+          <textarea rows="4" required placeholder="Mau tanya jam mana, budget berapa, atau ada model spesifik?" class="w-full bg-white border border-line rounded-md px-3 py-2 text-sm focus:border-ink outline-none resize-none"></textarea>
         </div>
-        <h2 class="font-serif text-4xl md:text-5xl">Quick Answers.</h2>
-      </div>
+        <button type="submit" class="w-full sm:w-auto px-6 h-10 rounded-md bg-ink text-white text-sm font-medium hover:bg-accent">Kirim Pesan</button>
+      </form>
 
-      <div class="space-y-px bg-smoke">
-        <details class="group bg-obsidian">
-          <summary class="cursor-pointer flex items-center justify-between p-6 list-none">
-            <span class="font-serif text-xl">Bagaimana proses pembayaran?</span>
-            <svg class="w-4 h-4 text-champagne transition group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      <!-- FAQ -->
+      <h2 class="text-xl font-semibold mt-12 mb-4">Pertanyaan Umum</h2>
+      <div class="space-y-2">
+        <details class="group border border-line rounded-md">
+          <summary class="cursor-pointer flex items-center justify-between p-4 list-none text-sm font-medium">
+            Bagaimana cara pembayaran?
+            <svg class="w-4 h-4 text-muted transition group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
-          <div class="px-6 pb-6 text-bone/70 text-sm leading-relaxed">Kami menerima bank transfer, escrow, dan partial trade-in. Untuk transaksi besar, kami fasilitasi escrow via notaris untuk additional security. DP 30% untuk reservasi, pelunasan saat handover.</div>
+          <div class="px-4 pb-4 text-sm text-muted leading-relaxed">Transfer bank (BCA, Mandiri, BNI, BRI), QRIS, atau COD area Jakarta. Bayar dulu, baru kami kirim.</div>
         </details>
-        <details class="group bg-obsidian">
-          <summary class="cursor-pointer flex items-center justify-between p-6 list-none">
-            <span class="font-serif text-xl">Apakah bisa cek fisik sebelum beli?</span>
-            <svg class="w-4 h-4 text-champagne transition group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        <details class="group border border-line rounded-md">
+          <summary class="cursor-pointer flex items-center justify-between p-4 list-none text-sm font-medium">
+            Bisa cek fisik dulu sebelum beli?
+            <svg class="w-4 h-4 text-muted transition group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
-          <div class="px-6 pb-6 text-bone/70 text-sm leading-relaxed">Tentu. Kunjungan ke private atelier kami di Senopati by appointment. Untuk client di luar Jakarta, kami bisa kirim untuk inspection dengan deposit refundable.</div>
+          <div class="px-4 pb-4 text-sm text-muted leading-relaxed">Bisa, datang ke toko by appointment. Atau kalau order dari luar Jakarta, ada kebijakan return 3 hari kalau tidak sesuai.</div>
         </details>
-        <details class="group bg-obsidian">
-          <summary class="cursor-pointer flex items-center justify-between p-6 list-none">
-            <span class="font-serif text-xl">Garansi seperti apa yang diberikan?</span>
-            <svg class="w-4 h-4 text-champagne transition group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        <details class="group border border-line rounded-md">
+          <summary class="cursor-pointer flex items-center justify-between p-4 list-none text-sm font-medium">
+            Bisa nego harga?
+            <svg class="w-4 h-4 text-muted transition group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
-          <div class="px-6 pb-6 text-bone/70 text-sm leading-relaxed">Setiap jam dijamin 100% original — jika terbukti tidak asli, full refund + 10% kompensasi. Garansi mekanikal 12 bulan untuk movement issues yang bukan disebabkan misuse.</div>
+          <div class="px-4 pb-4 text-sm text-muted leading-relaxed">Harga sudah lumayan tipis. Tapi kalau beli lebih dari 1 atau cash full, hubungi kami via WA — bisa kami kasih sedikit kelonggaran.</div>
         </details>
-        <details class="group bg-obsidian">
-          <summary class="cursor-pointer flex items-center justify-between p-6 list-none">
-            <span class="font-serif text-xl">Bagaimana cara consignment jam saya?</span>
-            <svg class="w-4 h-4 text-champagne transition group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+        <details class="group border border-line rounded-md">
+          <summary class="cursor-pointer flex items-center justify-between p-4 list-none text-sm font-medium">
+            Pengiriman seperti apa?
+            <svg class="w-4 h-4 text-muted transition group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
-          <div class="px-6 pb-6 text-bone/70 text-sm leading-relaxed">Kirim foto dan info ke WhatsApp untuk valuasi awal. Kalau cocok, kami atur pickup/inspection. Kami list jam kamu dengan foto profesional, fee consignment 8–12% dari final price (negotiable).</div>
-        </details>
-        <details class="group bg-obsidian">
-          <summary class="cursor-pointer flex items-center justify-between p-6 list-none">
-            <span class="font-serif text-xl">Apakah harga bisa nego?</span>
-            <svg class="w-4 h-4 text-champagne transition group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
-          </summary>
-          <div class="px-6 pb-6 text-bone/70 text-sm leading-relaxed">Untuk full payment cash atau bank transfer, ada flex pricing yang bisa kami diskusikan. Trade-in juga bisa adjust harga. Hubungi kurator via WhatsApp untuk detail.</div>
+          <div class="px-4 pb-4 text-sm text-muted leading-relaxed">JNE, J&T, atau SiCepat dengan asuransi. Free ongkir ke Jabodetabek untuk pembelian min. 3 juta. Same-day untuk order sebelum 15:00.</div>
         </details>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-obsidian">
-    <div class="max-w-[1400px] mx-auto px-6 py-12 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+  <footer class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
       <div>
-        <div class="flex items-center gap-3 mb-4">
-          <span class="w-9 h-9 border border-champagne rounded-full flex items-center justify-center">
-            <svg class="w-4 h-4 text-champagne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          </span>
-          <div class="leading-none">
-            <div class="font-serif text-xl">YUKGROW</div>
-            <div class="text-[10px] tracking-widest-2 text-champagne uppercase mt-0.5">Watch Atelier</div>
-          </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-7 h-7 rounded-full border-2 border-ink"></span>
+          <span class="font-semibold">YukGrow Watch</span>
         </div>
-        <p class="text-bone/60 text-sm leading-relaxed">Marketplace jam tangan mewah autentik untuk kolektor Indonesia.</p>
+        <p class="text-muted">Jam tangan original dengan harga jujur.</p>
       </div>
       <div>
-        <h4 class="text-[11px] tracking-widest-2 uppercase text-champagne mb-4">Explore</h4>
-        <ul class="space-y-2 text-sm text-bone/60">
-          <li><a href="./collection.html" class="hover:text-bone">All Watches</a></li>
-          <li><a href="./collection.html" class="hover:text-bone">By Brand</a></li>
+        <h4 class="font-medium mb-3">Menu</h4>
+        <ul class="space-y-2 text-muted">
+          <li><a href="./collection.html" class="hover:text-ink">Katalog</a></li>
+          <li><a href="./about.html" class="hover:text-ink">Tentang</a></li>
+          <li><a href="./contact.html" class="hover:text-ink">Kontak</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-[11px] tracking-widest-2 uppercase text-champagne mb-4">Services</h4>
-        <ul class="space-y-2 text-sm text-bone/60">
-          <li><a href="./contact.html" class="hover:text-bone">Sourcing</a></li>
-          <li><a href="./contact.html" class="hover:text-bone">Trade-In</a></li>
-          <li><a href="./contact.html" class="hover:text-bone">Consignment</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-[11px] tracking-widest-2 uppercase text-champagne mb-4">Contact</h4>
-        <ul class="space-y-2 text-sm text-bone/60">
-          <li>Jl. Senopati Raya 17, Jakarta Selatan</li>
-          <li><a href="tel:+628211097151" class="hover:text-bone">+62 821 1097 1151</a></li>
+        <h4 class="font-medium mb-3">Hubungi</h4>
+        <ul class="space-y-2 text-muted">
+          <li><a href="https://wa.me/628211097151" class="hover:text-ink">WhatsApp 0821 1097 1151</a></li>
+          <li><a href="mailto:hello@watch.yukgrow.com" class="hover:text-ink">hello@watch.yukgrow.com</a></li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-smoke">
-      <div class="max-w-[1400px] mx-auto px-6 py-5 text-xs text-bone/40 text-center">© 2026 YukGrow Watch Atelier.</div>
+    <div class="border-t border-line">
+      <div class="max-w-6xl mx-auto px-4 py-5 text-xs text-muted text-center">© 2026 YukGrow Watch.</div>
     </div>
   </footer>
 

@@ -3,492 +3,284 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YUKGROW WATCH — Authenticated Luxury Timepieces</title>
-  <meta name="description" content="Marketplace jam tangan mewah autentik. Rolex, Patek Philippe, Audemars Piguet, dan koleksi grail lainnya. Dijamin original, dengan garansi dan dokumentasi lengkap." />
+  <title>YukGrow Watch — Jam Tangan Original</title>
+  <meta name="description" content="Jual jam tangan original Seiko, Tissot, Hamilton, Citizen, Orient. Harga mulai 2 jutaan, garansi resmi." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            ink:    '#0A0A0B',
-            obsidian: '#111114',
-            graphite: '#1A1A1F',
-            smoke:  '#2A2A30',
-            bone:   '#F5F1EA',
-            champagne: '#C9A961',
-            champagneSoft: '#E5C98A',
-            copper: '#B87333',
+            ink: '#111827',
+            muted: '#6B7280',
+            line: '#E5E7EB',
+            soft: '#F9FAFB',
+            accent: '#0F172A',
           },
-          fontFamily: {
-            serif: ['"Cormorant Garamond"', 'serif'],
-            sans:  ['Inter', 'system-ui', 'sans-serif'],
-          },
-          letterSpacing: {
-            'widest-2': '0.3em',
-          }
+          fontFamily: { sans: ['Inter','system-ui','sans-serif'] }
         }
       }
     }
   </script>
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
-<body class="bg-ink text-bone font-sans antialiased selection:bg-champagne selection:text-ink">
+<body class="bg-white text-ink font-sans antialiased">
 
-  <!-- ANNOUNCEMENT BAR -->
-  <div class="bg-graphite border-b border-smoke text-bone/70 text-[11px] tracking-widest uppercase">
-    <div class="max-w-[1400px] mx-auto px-6 py-2.5 flex items-center justify-between">
-      <span class="hidden md:block">Free Authentication · Garansi Original 100%</span>
-      <span class="flex-1 md:flex-none text-center">Pengiriman Asuransi ke Seluruh Indonesia</span>
-      <span class="hidden md:block">+62 821 1097 1151</span>
+  <!-- TOP BAR -->
+  <div class="bg-soft border-b border-line text-xs text-muted">
+    <div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
+      <span>Garansi resmi · Original 100%</span>
+      <a href="https://wa.me/628211097151" class="hover:text-ink">WA: 0821 1097 1151</a>
     </div>
   </div>
 
-  <!-- NAVBAR -->
-  <header id="nav" class="sticky top-0 z-50 bg-ink/85 backdrop-blur-xl border-b border-smoke/60">
-    <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between gap-8">
-      <a href="./index.html" class="flex items-center gap-3 group">
-        <span class="w-9 h-9 border border-champagne rounded-full flex items-center justify-center group-hover:bg-champagne group-hover:text-ink transition">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-        </span>
-        <div class="leading-none">
-          <div class="font-serif text-xl tracking-wide">YUKGROW</div>
-          <div class="text-[10px] tracking-widest-2 text-champagne uppercase mt-0.5">Watch Atelier</div>
-        </div>
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-white border-b border-line">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="./index.html" class="flex items-center gap-2">
+        <span class="w-7 h-7 rounded-full border-2 border-ink"></span>
+        <span class="font-semibold tracking-tight">YukGrow Watch</span>
       </a>
-
-      <nav class="hidden lg:flex items-center gap-9 text-sm">
-        <a href="./collection.html" class="hover:text-champagne transition">Collection</a>
-        <a href="./collection.html#brands" class="hover:text-champagne transition">Brands</a>
-        <a href="./about.html" class="hover:text-champagne transition">Heritage</a>
-        <a href="./about.html#authenticity" class="hover:text-champagne transition">Authenticity</a>
-        <a href="./contact.html" class="hover:text-champagne transition">Contact</a>
+      <nav class="hidden md:flex items-center gap-7 text-sm text-muted">
+        <a href="./collection.html" class="hover:text-ink">Katalog</a>
+        <a href="./about.html" class="hover:text-ink">Tentang</a>
+        <a href="./contact.html" class="hover:text-ink">Kontak</a>
       </nav>
-
-      <div class="flex items-center gap-3">
-        <button aria-label="Search" class="w-10 h-10 rounded-full border border-smoke hover:border-champagne hover:text-champagne transition flex items-center justify-center">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
-        </button>
-        <a href="https://wa.me/628211097151" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-5 h-10 rounded-full bg-champagne text-ink text-xs font-semibold tracking-widest uppercase hover:bg-champagneSoft transition">
-          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.711.306 1.265.489 1.697.626.713.226 1.362.194 1.875.118.572-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-          WhatsApp
-        </a>
-        <button id="menuBtn" class="lg:hidden w-10 h-10 rounded-full border border-smoke flex items-center justify-center">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-        </button>
-      </div>
+      <a href="https://wa.me/628211097151" target="_blank" class="inline-flex items-center gap-2 px-4 h-9 rounded-full bg-ink text-white text-xs font-medium hover:bg-accent">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        Chat
+      </a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="relative overflow-hidden border-b border-smoke">
-    <div class="absolute inset-0">
-      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=2000&q=80" alt="Luxury watch" class="w-full h-full object-cover opacity-40" />
-      <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-transparent"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
-    </div>
-
-    <div class="relative max-w-[1400px] mx-auto px-6 pt-24 pb-32 lg:pt-36 lg:pb-44 grid lg:grid-cols-12 gap-10 items-center">
-      <div class="lg:col-span-7 z-10">
-        <div class="flex items-center gap-3 mb-6">
-          <span class="w-10 h-px bg-champagne"></span>
-          <span class="text-[11px] tracking-widest-2 text-champagne uppercase">Authenticated Since 2018</span>
-        </div>
-        <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-6">
-          Timepieces of <em class="text-champagne not-italic">Distinction</em>,<br/>
-          curated for <span class="italic">collectors</span>.
-        </h1>
-        <p class="text-bone/70 text-lg max-w-xl mb-10 leading-relaxed">
-          Marketplace jam tangan mewah autentik dari Rolex, Patek Philippe, Audemars Piguet, hingga grail independents. Setiap timepiece melewati 47-point authentication oleh watchmaker bersertifikasi.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="./collection.html" class="group inline-flex items-center gap-3 px-7 h-12 bg-champagne text-ink text-xs font-semibold tracking-widest-2 uppercase hover:bg-champagneSoft transition">
-            Explore Collection
-            <svg class="w-4 h-4 group-hover:translate-x-1 transition" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="./contact.html" class="inline-flex items-center gap-3 px-7 h-12 border border-bone/30 text-bone text-xs font-semibold tracking-widest-2 uppercase hover:border-champagne hover:text-champagne transition">
-            Sell Your Watch
-          </a>
-        </div>
-
-        <div class="mt-16 grid grid-cols-3 gap-6 max-w-lg border-t border-smoke pt-8">
-          <div>
-            <div class="font-serif text-3xl text-champagne">2,400+</div>
-            <div class="text-[11px] tracking-widest uppercase text-bone/60 mt-1">Watches Sold</div>
-          </div>
-          <div>
-            <div class="font-serif text-3xl text-champagne">47</div>
-            <div class="text-[11px] tracking-widest uppercase text-bone/60 mt-1">Authentication Pts</div>
-          </div>
-          <div>
-            <div class="font-serif text-3xl text-champagne">100%</div>
-            <div class="text-[11px] tracking-widest uppercase text-bone/60 mt-1">Original Guarantee</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hidden lg:block lg:col-span-5 relative z-10">
-        <div class="relative aspect-square">
-          <div class="absolute inset-0 bg-gradient-to-br from-champagne/20 to-transparent rounded-full blur-3xl"></div>
-          <img src="https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=900&q=80" alt="Featured watch" class="relative w-full h-full object-cover rounded-sm border border-champagne/20" />
-          <div class="absolute -bottom-6 -left-6 bg-graphite/90 backdrop-blur border border-smoke p-5 max-w-xs">
-            <div class="text-[10px] tracking-widest-2 uppercase text-champagne mb-2">Featured Today</div>
-            <div class="font-serif text-xl mb-1">Patek Philippe Nautilus</div>
-            <div class="text-bone/60 text-xs mb-3">Ref. 5711/1A · 2021 · Full Set</div>
-            <div class="flex items-center justify-between">
-              <span class="font-serif text-2xl text-champagne">Rp 2.4M</span>
-              <a href="./product.html" class="text-[11px] tracking-widest uppercase border-b border-champagne text-champagne pb-0.5 hover:opacity-80">View →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 text-bone/40 text-[10px] tracking-widest-2 uppercase">
-      <span>Scroll</span>
-      <span class="w-px h-10 bg-bone/30 animate-pulse"></span>
-    </div>
-  </section>
-
-  <!-- BRAND MARQUEE -->
-  <section class="border-b border-smoke py-10 overflow-hidden">
-    <div class="max-w-[1400px] mx-auto px-6 mb-6 flex items-center gap-3">
-      <span class="w-10 h-px bg-champagne"></span>
-      <span class="text-[11px] tracking-widest-2 uppercase text-champagne">Maisons We Carry</span>
-    </div>
-    <div class="relative">
-      <div class="flex gap-16 animate-marquee whitespace-nowrap">
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Rolex</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Patek Philippe</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Audemars Piguet</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Vacheron Constantin</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">A. Lange & Söhne</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Richard Mille</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">F.P. Journe</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Jaeger-LeCoultre</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Omega</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Cartier</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">IWC</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Hublot</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Rolex</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Patek Philippe</span>
-        <span class="font-serif text-3xl text-bone/40 hover:text-champagne transition">Audemars Piguet</span>
+  <!-- COMPACT HERO -->
+  <section class="border-b border-line bg-soft">
+    <div class="max-w-6xl mx-auto px-4 py-10 md:py-14">
+      <h1 class="text-3xl md:text-4xl font-semibold tracking-tight mb-3">Jam tangan original, harga jujur.</h1>
+      <p class="text-muted max-w-xl mb-6">Seiko, Tissot, Hamilton, Citizen, Orient, dan lainnya. Mulai 2 jutaan. Garansi resmi distributor.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="./collection.html" class="inline-flex items-center gap-2 px-5 h-10 rounded-md bg-ink text-white text-sm font-medium hover:bg-accent">
+          Lihat Katalog
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="https://wa.me/628211097151" target="_blank" class="inline-flex items-center gap-2 px-5 h-10 rounded-md border border-line text-sm font-medium hover:border-ink">Tanya via WhatsApp</a>
       </div>
     </div>
   </section>
 
-  <!-- FEATURED COLLECTION -->
-  <section class="border-b border-smoke">
-    <div class="max-w-[1400px] mx-auto px-6 py-24">
-      <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+  <!-- BRAND CHIPS -->
+  <section class="border-b border-line">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex gap-2 overflow-x-auto text-sm">
+      <a href="./collection.html?brand=seiko" class="shrink-0 px-3 h-8 rounded-full border border-line text-muted hover:border-ink hover:text-ink flex items-center">Seiko</a>
+      <a href="./collection.html?brand=tissot" class="shrink-0 px-3 h-8 rounded-full border border-line text-muted hover:border-ink hover:text-ink flex items-center">Tissot</a>
+      <a href="./collection.html?brand=hamilton" class="shrink-0 px-3 h-8 rounded-full border border-line text-muted hover:border-ink hover:text-ink flex items-center">Hamilton</a>
+      <a href="./collection.html?brand=citizen" class="shrink-0 px-3 h-8 rounded-full border border-line text-muted hover:border-ink hover:text-ink flex items-center">Citizen</a>
+      <a href="./collection.html?brand=orient" class="shrink-0 px-3 h-8 rounded-full border border-line text-muted hover:border-ink hover:text-ink flex items-center">Orient</a>
+      <a href="./collection.html?brand=casio" class="shrink-0 px-3 h-8 rounded-full border border-line text-muted hover:border-ink hover:text-ink flex items-center">Casio</a>
+      <a href="./collection.html?brand=swatch" class="shrink-0 px-3 h-8 rounded-full border border-line text-muted hover:border-ink hover:text-ink flex items-center">Swatch</a>
+      <a href="./collection.html?brand=fossil" class="shrink-0 px-3 h-8 rounded-full border border-line text-muted hover:border-ink hover:text-ink flex items-center">Fossil</a>
+      <a href="./collection.html" class="shrink-0 px-3 h-8 rounded-full text-muted hover:text-ink flex items-center">Lihat semua →</a>
+    </div>
+  </section>
+
+  <!-- CATALOG (the focus) -->
+  <section>
+    <div class="max-w-6xl mx-auto px-4 py-10">
+      <div class="flex items-end justify-between mb-6">
         <div>
-          <div class="flex items-center gap-3 mb-4">
-            <span class="w-10 h-px bg-champagne"></span>
-            <span class="text-[11px] tracking-widest-2 uppercase text-champagne">Curated Selection</span>
-          </div>
-          <h2 class="font-serif text-4xl md:text-5xl">The Grail Collection</h2>
-          <p class="text-bone/60 mt-3 max-w-xl">Pilihan personal kurator kami minggu ini — dari sport-luxury icon hingga independent watchmaking masterpiece.</p>
+          <h2 class="text-xl md:text-2xl font-semibold tracking-tight">Katalog Terbaru</h2>
+          <p class="text-sm text-muted mt-1">Update tiap minggu. Stok terbatas.</p>
         </div>
-        <a href="./collection.html" class="text-xs tracking-widest-2 uppercase border-b border-champagne text-champagne pb-1 hover:opacity-80">View All Collection →</a>
+        <a href="./collection.html" class="text-sm text-muted hover:text-ink">Lihat semua →</a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Card 1 -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
+
         <a href="./product.html" class="group block">
-          <div class="relative aspect-[4/5] overflow-hidden bg-graphite mb-4">
-            <img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
-            <div class="absolute top-4 left-4 bg-ink/80 backdrop-blur px-3 py-1 text-[10px] tracking-widest uppercase text-champagne">New Arrival</div>
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
-            <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-champagne text-ink flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
           </div>
-          <div class="text-[10px] tracking-widest-2 uppercase text-champagne mb-1.5">Patek Philippe</div>
-          <h3 class="font-serif text-xl leading-tight mb-1 group-hover:text-champagne transition">Nautilus 5711/1A-014</h3>
-          <div class="text-bone/50 text-xs mb-3">2022 · Olive Green · Full Set</div>
-          <div class="flex items-end justify-between">
-            <span class="font-serif text-lg text-champagne">Rp 2.450.000.000</span>
-            <span class="text-[10px] tracking-widest uppercase text-bone/50">Mint</span>
-          </div>
+          <div class="text-xs text-muted mb-0.5">Seiko</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Seiko 5 Sports SRPD55K1</h3>
+          <div class="text-sm font-semibold">Rp 2.450.000</div>
         </a>
 
-        <!-- Card 2 -->
         <a href="./product.html" class="group block">
-          <div class="relative aspect-[4/5] overflow-hidden bg-graphite mb-4">
-            <img src="https://images.unsplash.com/photo-1548171915-e5c8b1c2e5b6?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
-            <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-champagne text-ink flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
           </div>
-          <div class="text-[10px] tracking-widest-2 uppercase text-champagne mb-1.5">Rolex</div>
-          <h3 class="font-serif text-xl leading-tight mb-1 group-hover:text-champagne transition">Daytona 116500LN</h3>
-          <div class="text-bone/50 text-xs mb-3">2023 · White Dial · Full Set</div>
-          <div class="flex items-end justify-between">
-            <span class="font-serif text-lg text-champagne">Rp 645.000.000</span>
-            <span class="text-[10px] tracking-widest uppercase text-bone/50">Unworn</span>
-          </div>
+          <div class="text-xs text-muted mb-0.5">Tissot</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Tissot PRX 40 Quartz</h3>
+          <div class="text-sm font-semibold">Rp 5.890.000</div>
         </a>
 
-        <!-- Card 3 -->
         <a href="./product.html" class="group block">
-          <div class="relative aspect-[4/5] overflow-hidden bg-graphite mb-4">
-            <img src="https://images.unsplash.com/photo-1606293459725-b1c08eaa3408?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
-            <div class="absolute top-4 left-4 bg-champagne text-ink px-3 py-1 text-[10px] tracking-widest uppercase font-semibold">Featured</div>
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
-            <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-champagne text-ink flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
           </div>
-          <div class="text-[10px] tracking-widest-2 uppercase text-champagne mb-1.5">Audemars Piguet</div>
-          <h3 class="font-serif text-xl leading-tight mb-1 group-hover:text-champagne transition">Royal Oak 15500ST</h3>
-          <div class="text-bone/50 text-xs mb-3">2021 · Blue Dial · Full Set</div>
-          <div class="flex items-end justify-between">
-            <span class="font-serif text-lg text-champagne">Rp 875.000.000</span>
-            <span class="text-[10px] tracking-widest uppercase text-bone/50">Excellent</span>
-          </div>
+          <div class="text-xs text-muted mb-0.5">Hamilton</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Hamilton Khaki Field Mechanical</h3>
+          <div class="text-sm font-semibold">Rp 8.250.000</div>
         </a>
 
-        <!-- Card 4 -->
         <a href="./product.html" class="group block">
-          <div class="relative aspect-[4/5] overflow-hidden bg-graphite mb-4">
-            <img src="https://images.unsplash.com/photo-1639037687665-37e7e810cdfd?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
-            <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-champagne text-ink flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
           </div>
-          <div class="text-[10px] tracking-widest-2 uppercase text-champagne mb-1.5">A. Lange & Söhne</div>
-          <h3 class="font-serif text-xl leading-tight mb-1 group-hover:text-champagne transition">Lange 1 Moonphase</h3>
-          <div class="text-bone/50 text-xs mb-3">2020 · Pink Gold · Full Set</div>
-          <div class="flex items-end justify-between">
-            <span class="font-serif text-lg text-champagne">Rp 1.250.000.000</span>
-            <span class="text-[10px] tracking-widest uppercase text-bone/50">Mint</span>
+          <div class="text-xs text-muted mb-0.5">Citizen</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Citizen Eco-Drive Promaster</h3>
+          <div class="text-sm font-semibold">Rp 3.690.000</div>
+        </a>
+
+        <a href="./product.html" class="group block">
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
           </div>
+          <div class="text-xs text-muted mb-0.5">Orient</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Orient Bambino V2 Automatic</h3>
+          <div class="text-sm font-semibold">Rp 2.890.000</div>
+        </a>
+
+        <a href="./product.html" class="group block">
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+          </div>
+          <div class="text-xs text-muted mb-0.5">Casio</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Casio G-Shock GA-2100</h3>
+          <div class="text-sm font-semibold">Rp 1.690.000</div>
+        </a>
+
+        <a href="./product.html" class="group block">
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+          </div>
+          <div class="text-xs text-muted mb-0.5">Seiko</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Seiko Presage Cocktail</h3>
+          <div class="text-sm font-semibold">Rp 5.890.000</div>
+        </a>
+
+        <a href="./product.html" class="group block">
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1548171915-e5c8b1c2e5b6?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+          </div>
+          <div class="text-xs text-muted mb-0.5">Tissot</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Tissot Le Locle Powermatic 80</h3>
+          <div class="text-sm font-semibold">Rp 9.450.000</div>
+        </a>
+
+        <a href="./product.html" class="group block">
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1606293459725-b1c08eaa3408?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+          </div>
+          <div class="text-xs text-muted mb-0.5">Hamilton</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Hamilton Jazzmaster Auto</h3>
+          <div class="text-sm font-semibold">Rp 11.250.000</div>
+        </a>
+
+        <a href="./product.html" class="group block">
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1639037687665-37e7e810cdfd?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+          </div>
+          <div class="text-xs text-muted mb-0.5">Orient</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Orient Mako II Diver</h3>
+          <div class="text-sm font-semibold">Rp 3.290.000</div>
+        </a>
+
+        <a href="./product.html" class="group block">
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1611081020146-91c9e3266b1d?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+          </div>
+          <div class="text-xs text-muted mb-0.5">Citizen</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Citizen Tsuyosa Automatic</h3>
+          <div class="text-sm font-semibold">Rp 4.190.000</div>
+        </a>
+
+        <a href="./product.html" class="group block">
+          <div class="aspect-square bg-soft mb-3 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+          </div>
+          <div class="text-xs text-muted mb-0.5">Seiko</div>
+          <h3 class="text-sm font-medium leading-snug mb-1 group-hover:underline">Seiko Prospex Turtle SRPE93</h3>
+          <div class="text-sm font-semibold">Rp 6.890.000</div>
+        </a>
+
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="./collection.html" class="inline-flex items-center gap-2 px-6 h-11 rounded-md border border-line text-sm font-medium hover:border-ink">
+          Lihat Semua Katalog
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- AUTHENTICATION PROCESS -->
-  <section class="border-b border-smoke bg-obsidian">
-    <div class="max-w-[1400px] mx-auto px-6 py-24 grid lg:grid-cols-12 gap-12 items-center">
-      <div class="lg:col-span-5">
-        <div class="relative aspect-[4/5] overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=900&q=80" class="w-full h-full object-cover"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent"></div>
+  <!-- TRUST STRIP -->
+  <section class="border-y border-line bg-soft">
+    <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+      <div class="flex items-start gap-3">
+        <svg class="w-5 h-5 mt-0.5 text-ink" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 9.4 8 11 4.5-1.6 8-6 8-11V5l-8-3z"/></svg>
+        <div>
+          <div class="font-medium">Original 100%</div>
+          <div class="text-muted text-xs mt-0.5">Atau uang kembali</div>
         </div>
       </div>
-      <div class="lg:col-span-7">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="w-10 h-px bg-champagne"></span>
-          <span class="text-[11px] tracking-widest-2 uppercase text-champagne">Our Promise</span>
-        </div>
-        <h2 class="font-serif text-4xl md:text-5xl mb-6 leading-tight">Every timepiece, <em class="text-champagne not-italic">authenticated.</em></h2>
-        <p class="text-bone/70 mb-10 max-w-xl leading-relaxed">
-          Setiap jam yang masuk ke koleksi kami melewati 47-point inspection oleh watchmaker bersertifikasi. Movement, case, dial, bracelet — semua diperiksa di bawah mikroskop dan timegrapher.
-        </p>
-
-        <div class="grid sm:grid-cols-2 gap-x-10 gap-y-8">
-          <div class="border-l border-champagne/40 pl-5">
-            <div class="font-serif text-3xl text-champagne mb-2">01</div>
-            <h4 class="font-medium mb-1.5">Visual Inspection</h4>
-            <p class="text-bone/60 text-sm leading-relaxed">Pemeriksaan case, dial, hands, dan bracelet di bawah 10x magnification.</p>
-          </div>
-          <div class="border-l border-champagne/40 pl-5">
-            <div class="font-serif text-3xl text-champagne mb-2">02</div>
-            <h4 class="font-medium mb-1.5">Movement Analysis</h4>
-            <p class="text-bone/60 text-sm leading-relaxed">Caliber verification, timegrapher test, dan power reserve check.</p>
-          </div>
-          <div class="border-l border-champagne/40 pl-5">
-            <div class="font-serif text-3xl text-champagne mb-2">03</div>
-            <h4 class="font-medium mb-1.5">Documentation</h4>
-            <p class="text-bone/60 text-sm leading-relaxed">Cross-check serial number dengan database pabrikan dan riwayat servis.</p>
-          </div>
-          <div class="border-l border-champagne/40 pl-5">
-            <div class="font-serif text-3xl text-champagne mb-2">04</div>
-            <h4 class="font-medium mb-1.5">Final Certification</h4>
-            <p class="text-bone/60 text-sm leading-relaxed">Sertifikat keaslian YukGrow & garansi mekanikal 12 bulan.</p>
-          </div>
-        </div>
-
-        <a href="./about.html#authenticity" class="inline-flex items-center gap-3 mt-10 text-xs tracking-widest-2 uppercase border-b border-champagne text-champagne pb-1 hover:opacity-80">
-          Learn About Our Process →
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="border-b border-smoke">
-    <div class="max-w-[1400px] mx-auto px-6 py-24">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <div class="flex items-center justify-center gap-3 mb-4">
-          <span class="w-10 h-px bg-champagne"></span>
-          <span class="text-[11px] tracking-widest-2 uppercase text-champagne">Concierge</span>
-          <span class="w-10 h-px bg-champagne"></span>
-        </div>
-        <h2 class="font-serif text-4xl md:text-5xl mb-4">More than a marketplace.</h2>
-        <p class="text-bone/60">Layanan lengkap untuk kolektor — dari sourcing grail piece hingga consignment dengan global reach.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="group p-8 border border-smoke hover:border-champagne/40 hover:bg-graphite/30 transition">
-          <svg class="w-10 h-10 text-champagne mb-6" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          <h3 class="font-serif text-2xl mb-3">Sourcing</h3>
-          <p class="text-bone/60 text-sm leading-relaxed mb-5">Cari grail piece spesifik? Tim kami punya jaringan global untuk hunt watch yang kamu inginkan.</p>
-          <a href="./contact.html" class="text-[11px] tracking-widest-2 uppercase text-champagne border-b border-champagne pb-0.5 group-hover:opacity-80">Request Search →</a>
-        </div>
-        <div class="group p-8 border border-smoke hover:border-champagne/40 hover:bg-graphite/30 transition">
-          <svg class="w-10 h-10 text-champagne mb-6" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path d="M12 2v20M5 9l7-7 7 7M5 15l7 7 7-7"/></svg>
-          <h3 class="font-serif text-2xl mb-3">Trade-In</h3>
-          <p class="text-bone/60 text-sm leading-relaxed mb-5">Upgrade koleksi kamu. Kami terima jam lama sebagai partial payment dengan valuasi fair market.</p>
-          <a href="./contact.html" class="text-[11px] tracking-widest-2 uppercase text-champagne border-b border-champagne pb-0.5 group-hover:opacity-80">Get Valuation →</a>
-        </div>
-        <div class="group p-8 border border-smoke hover:border-champagne/40 hover:bg-graphite/30 transition">
-          <svg class="w-10 h-10 text-champagne mb-6" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
-          <h3 class="font-serif text-2xl mb-3">Consignment</h3>
-          <p class="text-bone/60 text-sm leading-relaxed mb-5">Titipkan jam kamu untuk dijual. Foto profesional, listing global, dan harga yang fair.</p>
-          <a href="./contact.html" class="text-[11px] tracking-widest-2 uppercase text-champagne border-b border-champagne pb-0.5 group-hover:opacity-80">Start Consignment →</a>
+      <div class="flex items-start gap-3">
+        <svg class="w-5 h-5 mt-0.5 text-ink" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div>
+          <div class="font-medium">Garansi Resmi</div>
+          <div class="text-muted text-xs mt-0.5">Dari distributor</div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIAL -->
-  <section class="border-b border-smoke bg-obsidian relative overflow-hidden">
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 20% 30%, #C9A961 0, transparent 40%), radial-gradient(circle at 80% 70%, #C9A961 0, transparent 40%);"></div>
-    <div class="relative max-w-[1000px] mx-auto px-6 py-24 text-center">
-      <svg class="w-12 h-12 text-champagne/40 mx-auto mb-8" fill="currentColor" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-      <p class="font-serif text-2xl md:text-3xl leading-relaxed mb-10">
-        "Saya beli Patek 5712 di YukGrow Watch tahun lalu. Authentication-nya thorough, packaging-nya museum-grade. Ini benchmark baru buat marketplace jam mewah di Indonesia."
-      </p>
-      <div class="flex items-center justify-center gap-4">
-        <div class="w-12 h-12 rounded-full bg-graphite border border-champagne/40"></div>
-        <div class="text-left">
-          <div class="font-medium">Adrian H.</div>
-          <div class="text-bone/50 text-xs tracking-widest uppercase">Collector · Jakarta</div>
+      <div class="flex items-start gap-3">
+        <svg class="w-5 h-5 mt-0.5 text-ink" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 7h13l5 5v5h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+        <div>
+          <div class="font-medium">Free Ongkir</div>
+          <div class="text-muted text-xs mt-0.5">Min. pembelian 3jt</div>
         </div>
       </div>
-
-      <div class="flex justify-center gap-2 mt-10">
-        <span class="w-8 h-px bg-champagne"></span>
-        <span class="w-2 h-px bg-bone/30"></span>
-        <span class="w-2 h-px bg-bone/30"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="border-b border-smoke">
-    <div class="max-w-[1400px] mx-auto px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <span class="w-10 h-px bg-champagne"></span>
-          <span class="text-[11px] tracking-widest-2 uppercase text-champagne">Ready to Begin?</span>
+      <div class="flex items-start gap-3">
+        <svg class="w-5 h-5 mt-0.5 text-ink" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <div>
+          <div class="font-medium">Respon Cepat</div>
+          <div class="text-muted text-xs mt-0.5">WA 5 menit</div>
         </div>
-        <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-6">
-          Mulai perjalanan koleksi kamu <em class="text-champagne not-italic">hari ini.</em>
-        </h2>
-        <p class="text-bone/60 mb-8 max-w-lg">Hubungi tim kurator kami via WhatsApp untuk konsultasi privat. Tidak ada biaya, tidak ada tekanan — hanya pengalaman watch acquisition yang seharusnya.</p>
-      </div>
-      <div class="flex flex-col gap-3">
-        <a href="https://wa.me/628211097151" target="_blank" class="flex items-center justify-between gap-4 px-6 h-16 bg-champagne text-ink hover:bg-champagneSoft transition">
-          <span class="flex items-center gap-4">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.711.306 1.265.489 1.697.626.713.226 1.362.194 1.875.118.572-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-            <div class="text-left">
-              <div class="text-[10px] tracking-widest-2 uppercase font-semibold opacity-70">WhatsApp</div>
-              <div class="font-medium">+62 821 1097 1151</div>
-            </div>
-          </span>
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="https://www.instagram.com" target="_blank" class="flex items-center justify-between gap-4 px-6 h-16 border border-smoke hover:border-champagne hover:text-champagne transition">
-          <span class="flex items-center gap-4">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            <div class="text-left">
-              <div class="text-[10px] tracking-widest-2 uppercase font-semibold opacity-70">Instagram</div>
-              <div class="font-medium">@yukgrow.watch</div>
-            </div>
-          </span>
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-obsidian">
-    <div class="max-w-[1400px] mx-auto px-6 py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+  <footer class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
       <div>
-        <div class="flex items-center gap-3 mb-5">
-          <span class="w-9 h-9 border border-champagne rounded-full flex items-center justify-center">
-            <svg class="w-4 h-4 text-champagne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          </span>
-          <div class="leading-none">
-            <div class="font-serif text-xl">YUKGROW</div>
-            <div class="text-[10px] tracking-widest-2 text-champagne uppercase mt-0.5">Watch Atelier</div>
-          </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-7 h-7 rounded-full border-2 border-ink"></span>
+          <span class="font-semibold">YukGrow Watch</span>
         </div>
-        <p class="text-bone/60 text-sm leading-relaxed mb-6">Marketplace jam tangan mewah autentik untuk kolektor di Indonesia. Setiap timepiece dijamin original dengan dokumentasi lengkap.</p>
-        <div class="flex gap-3">
-          <a href="#" class="w-9 h-9 rounded-full border border-smoke hover:border-champagne hover:text-champagne transition flex items-center justify-center">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="#" class="w-9 h-9 rounded-full border border-smoke hover:border-champagne hover:text-champagne transition flex items-center justify-center">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-          </a>
-          <a href="#" class="w-9 h-9 rounded-full border border-smoke hover:border-champagne hover:text-champagne transition flex items-center justify-center">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-          </a>
-        </div>
+        <p class="text-muted">Jam tangan original dengan harga jujur. Garansi resmi distributor.</p>
       </div>
-
       <div>
-        <h4 class="text-[11px] tracking-widest-2 uppercase text-champagne mb-5">Explore</h4>
-        <ul class="space-y-3 text-sm text-bone/60">
-          <li><a href="./collection.html" class="hover:text-bone transition">All Watches</a></li>
-          <li><a href="./collection.html" class="hover:text-bone transition">By Brand</a></li>
-          <li><a href="./collection.html" class="hover:text-bone transition">New Arrivals</a></li>
-          <li><a href="./collection.html" class="hover:text-bone transition">Limited Edition</a></li>
-          <li><a href="./collection.html" class="hover:text-bone transition">Pre-Owned</a></li>
+        <h4 class="font-medium mb-3">Menu</h4>
+        <ul class="space-y-2 text-muted">
+          <li><a href="./collection.html" class="hover:text-ink">Katalog</a></li>
+          <li><a href="./about.html" class="hover:text-ink">Tentang</a></li>
+          <li><a href="./contact.html" class="hover:text-ink">Kontak</a></li>
         </ul>
       </div>
-
       <div>
-        <h4 class="text-[11px] tracking-widest-2 uppercase text-champagne mb-5">Services</h4>
-        <ul class="space-y-3 text-sm text-bone/60">
-          <li><a href="./contact.html" class="hover:text-bone transition">Sourcing Request</a></li>
-          <li><a href="./contact.html" class="hover:text-bone transition">Trade-In</a></li>
-          <li><a href="./contact.html" class="hover:text-bone transition">Consignment</a></li>
-          <li><a href="./about.html#authenticity" class="hover:text-bone transition">Authentication</a></li>
-          <li><a href="./about.html" class="hover:text-bone transition">Watch Care</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-[11px] tracking-widest-2 uppercase text-champagne mb-5">Contact</h4>
-        <ul class="space-y-3 text-sm text-bone/60">
-          <li>Jl. Senopati Raya 17<br/>Jakarta Selatan 12190</li>
-          <li><a href="tel:+628211097151" class="hover:text-bone transition">+62 821 1097 1151</a></li>
-          <li><a href="mailto:hello@watch.yukgrow.com" class="hover:text-bone transition">hello@watch.yukgrow.com</a></li>
-          <li class="pt-2 text-xs text-bone/40">Mon–Sat · 10:00–19:00 WIB</li>
+        <h4 class="font-medium mb-3">Hubungi</h4>
+        <ul class="space-y-2 text-muted">
+          <li><a href="https://wa.me/628211097151" class="hover:text-ink">WhatsApp 0821 1097 1151</a></li>
+          <li><a href="mailto:hello@watch.yukgrow.com" class="hover:text-ink">hello@watch.yukgrow.com</a></li>
+          <li>Jakarta · Senin–Sabtu 10:00–19:00</li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-smoke">
-      <div class="max-w-[1400px] mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-bone/40">
-        <div>© 2026 YukGrow Watch Atelier. All rights reserved.</div>
-        <div class="flex gap-6">
-          <a href="#" class="hover:text-bone transition">Privacy</a>
-          <a href="#" class="hover:text-bone transition">Terms</a>
-          <a href="#" class="hover:text-bone transition">Shipping & Returns</a>
-        </div>
-      </div>
+    <div class="border-t border-line">
+      <div class="max-w-6xl mx-auto px-4 py-5 text-xs text-muted text-center">© 2026 YukGrow Watch.</div>
     </div>
   </footer>
 

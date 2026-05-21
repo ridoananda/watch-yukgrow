@@ -1,82 +1,19 @@
-/* Custom styles untuk YukGrow Watch */
+/* YukGrow Watch — minimal styles */
 
-@keyframes marquee {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.animate-marquee {
-  animation: marquee 40s linear infinite;
-}
-
-/* Smooth scroll */
 html { scroll-behavior: smooth; }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: #0A0A0B; }
-::-webkit-scrollbar-thumb { background: #2A2A30; }
-::-webkit-scrollbar-thumb:hover { background: #C9A961; }
+::-webkit-scrollbar-track { background: #F9FAFB; }
+::-webkit-scrollbar-thumb { background: #E5E7EB; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #6B7280; }
 
-/* Subtle texture overlay */
-.texture-grain {
-  position: relative;
-}
-.texture-grain::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-/* Fade-in on scroll */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Range slider styling */
-input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  background: #2A2A30;
-  height: 2px;
-}
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #C9A961;
-  cursor: pointer;
-}
-input[type="range"]::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #C9A961;
-  cursor: pointer;
-  border: none;
-}
-
-/* Gallery thumb selected */
+/* Gallery thumb selected state */
 .gallery-thumb.active {
-  border-color: #C9A961;
-  opacity: 1;
+  border-color: #111827 !important;
+  opacity: 1 !important;
 }
 
-/* Mobile menu */
-.mobile-menu {
-  transform: translateX(100%);
-  transition: transform 0.4s ease;
-}
-.mobile-menu.open {
-  transform: translateX(0);
-}
+/* Hide scrollbar on horizontal brand scroller */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
